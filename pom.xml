@@ -92,7 +92,7 @@
 
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>appengine-maven-plugins</artifactId>
+				<artifactId>appengine-maven-plugin</artifactId>
 				<version>1.2.1</version>
 			</plugin>
 		</plugins>
