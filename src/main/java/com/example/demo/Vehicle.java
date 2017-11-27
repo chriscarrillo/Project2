@@ -1,11 +1,12 @@
 package com.example.demo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "vehicles")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public class Vehicle {
+public class Vehicle implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,6 +21,9 @@ public class Vehicle {
         this.makeModel = makeModel;
         this.year = year;
         this.retailPrice = retailPrice;
+    }
+
+    public Vehicle() {
     }
 
     public String toString() {
